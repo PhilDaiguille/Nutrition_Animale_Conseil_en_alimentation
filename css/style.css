@@ -1,0 +1,528 @@
+/*reset*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Balsamiq Sans', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+    
+}
+*{
+    box-sizing: border-box;
+}
+button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/*header*/
+
+header{
+    margin: 0 auto;
+    height: 10rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    background-color: #f5f5f7;
+    border-bottom: solid .5rem  #dbdbdb;
+    font-family: 'Balsamiq Sans';
+    font-weight: 400;
+
+}
+header img{
+    transform: scale(0.8);
+    transform: scaleY(2rem);
+}
+header hr{
+    display: inline-block;
+    background-color: rgba(34, 34, 34, 0.295);
+}
+header nav{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header .nav{
+    max-width: 80rem
+
+}
+header .nav .menu{
+    display: none;
+}
+header h1{
+    display: flex;
+    padding: 1rem;
+    max-width: 40rem;
+    justify-content: end;
+}
+header .C{
+    align-items: flex-end;
+    padding: 0.6rem;
+    font-size: 1.7rem;
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    white-space: nowrap;
+
+}
+header nav ul li{
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul li a{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+    transform: translateY(-0.5rem) scale(1.05);
+    transition: 0.2s ease-in-out;
+    color: #1E9ABD;
+    border-bottom: solid .2rem #1E9ABD;
+}
+/*main*/
+main{
+    margin: 0 auto;
+    max-width: 135rem;
+    display: block;
+    padding-top: 10.5rem;
+}
+main .first .bvn img{
+    max-width: 20rem;
+    display: flex;
+    margin: 0 auto;
+    
+    justify-content: center;
+}
+main .first .bvn{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+main .first .bvn .bvn1{
+    text-align: justify;
+    background-color: #fafafa;  
+    
+    background-color: #ffbf6b;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+main .first .bvn .bvn1{
+    padding-bottom: 3rem;
+    max-width: 50rem;
+    font-weight: 400;
+}
+main .first .bvn .bvn1 li a{
+    border: solid 0.1rem #222;
+    background-color: #e59345;
+    padding: 2rem;
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color:#0F0F0F;
+}
+main .first .bvn h2{
+    padding-top: 5rem;
+    text-align: center;
+}
+main .first .bvn .bvn1 li{
+    padding: 4rem;
+}
+main .first .bvn2 li{
+    padding: 1rem;
+}
+main .first .bvn2 li img{
+    max-width: 47rem;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    border: solid .2rem rgba(34, 34, 34, 0.342);
+}
+/*Service*/
+main .second .serv{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 50rem 3fr;
+}
+main .second{
+    padding-top: 10rem;
+}
+main .second .serv .serv1{
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    background-color: #ededed;
+    border-radius: 1rem;
+}
+main .second .serv .serv1 li h2{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+main .second .serv .serv1 li img{
+    margin: 0 auto;
+    padding-top: 3rem;
+    display: flex;
+}
+main .second .serv .serv2 .ani img{
+    max-width: 25rem;
+    transform: translateY(-2rem);
+    display: block;
+    margin: 0 auto;
+}
+main .second .serv .serv2{
+    display: grid;
+    padding: 5rem;
+    padding-top: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+main .second .serv ul li h2{
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+}
+main .second .serv ul li{
+    padding: 2rem;
+}
+main .second .serv ul li p{
+    text-align: justify;
+    
+}
+main .second .serv ul li h2 .f{
+    font-size: 3rem;
+    padding-right: 1rem;
+    color: #247a92;
+    transform: scale(10);
+    letter-spacing: 0.12em;
+}
+
+/*page 3*/
+main .third{
+    padding-top: 10rem;
+}
+main .third ul{
+    display: grid;
+    margin: 0rem auto;
+    max-width: 100%;
+    grid-template-columns: 50rem 3fr;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+}
+main .third ul li h1{
+    display: block;
+    font-weight: 400;
+    text-align: end;
+    padding-right: 10rem;
+}
+main .third ul li p{
+    max-width: 75rem;
+    text-align: justify;
+}
+main .third ul li{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+
+/*page 4*/
+
+main .fourth{
+    display: grid;
+    margin: 0 auto;
+    padding-top: 10rem;
+    max-width: 100%;
+    grid-template-columns: 50rem 3fr;
+}
+main .fourth h1{
+    justify-self: end;
+    padding: 5rem;
+}
+main .fourth .info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+main .fourth .info section ul li p{
+    padding: 2rem;
+}
+main .fourth .info section{
+    text-align: center;
+    padding: 3rem;
+}
+main .fourth .info{
+    background-color: #eeeeee;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+}
+main .fourth .info section img{
+    padding: 2rem;
+}
+main .fourth .info section p{
+    padding: 1rem;
+}
+main .fourth .info section ul li img{
+    display: flex;
+    padding-top: 3rem;
+    margin: 0 auto;
+    max-width: 20rem;
+}
+main .formu fieldset{
+    border: transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #ededed;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+}
+main .formu fieldset legend{
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+}
+main .formu .test{
+    display: grid;
+    grid-template-columns: 40rem 2fr;
+    max-width: 100rem;
+}
+main .formu{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 50rem 3fr;
+} 
+main .formu fieldset form input{
+    margin: 0.3rem;
+    display:inline-block;
+    max-width: 99%;
+    padding: 1rem;
+    border: 0;
+}
+main .formu fieldset form .NES input, main .formu fieldset form .msg input{
+    width: 100%;
+}
+main .formu fieldset form .msg input{
+    border-style: solid;
+    overflow-y: auto;
+}
+main .formu fieldset .input{
+    display: flex;
+    color: #fff;
+    background-color: #f56a56;
+    border: 0;
+    padding: 1rem;
+
+}
+
+main .bye{
+    padding: 2rem;
+    margin: 0 auto;
+}
+main .bye img{
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    padding: 2rem;
+}
+main .bye h2{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    background-color: #f5f5f7;
+    margin-top: 5rem;
+}
+footer p{
+    margin: 0 auto;
+    color: #222;
+    padding: 2rem;
+    max-width: 50rem;
+    text-align: center;
+    font-weight: 800;
+}
+footer a{
+    margin: 0 auto;
+    max-width: 10rem;
+    display: block;
+    padding-bottom: 3rem;
+}
+footer img:hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.2);
+    border-bottom: solid .3rem #222 ;
+}
+footer img{
+    padding: 2rem;
+    max-width: 9rem;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 40.0rem){ 
+    header h1{
+        font-size: 2rem;
+        display: block;
+    }
+    header .C{
+        display: block;
+        font-size: 1.5rem;
+    }
+    header img{
+        display: block;
+        max-width: 30rem;
+    }
+    header nav ul{
+        display: none;
+    }
+    header hr{
+        display: none;
+    }
+    main{
+        max-width: 40rem;
+    }
+    main .first .bvn2 li img{
+        max-width: 30rem;
+    }
+    main .first .bvn ,main .second, main .third, main .fourth{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main .second .serv, main .second .serv .serv1, main .second .serv .serv2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .third ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .fourth h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+    main .fourth .info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .formu .test, main .formu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .bye img{
+        max-width: 35rem;
+    }
+    main .second{
+        max-width: 40rem;
+    }
+    main .first, main .second, main .third, .main.fourth{
+        padding-top: 4rem;
+    }
+    main .second .serv .serv2 .ani img{
+        max-width: 20rem;
+    }
+    main .fourth section img{
+        max-width: 30rem;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 60.0rem){
+    header h1{
+        font-size: 2rem;
+        display: block;
+    }
+    header .C{
+        display: block;
+        font-size: 1.5rem;
+    }
+    header img{
+        display: block;
+        max-width: 60rem;
+    }
+    header nav ul{
+        display: none;
+    }
+    header hr{
+        display: none;
+    }
+    main{
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    main .first .bvn2 li img{
+        max-width: 30rem;
+    }
+    main .first .bvn ,main .second, main .third, main .fourth{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main .second .serv, main .second .serv .serv1, main .second .serv .serv2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .third ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .fourth h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+    main .fourth .info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .formu .test, main .formu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .bye img{
+        max-width: 55rem;
+    }
+    main .second{
+        max-width: 60rem;
+    }
+    main .first, main .second, main .third, .main.fourth{
+        padding-top: 4rem;
+    }
+    main .second .serv .serv2 .ani img{
+        max-width: 30rem;
+    }
+    main .fourth section img{
+        max-width: 40rem;
+    }
+}
