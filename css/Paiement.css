@@ -4,7 +4,6 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    font-weight: 400;
 }
 body{
     font: 1.6rem 'Balsamiq Sans', sans-serif;
@@ -34,7 +33,7 @@ header{
     height: 9rem;
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 20;
     display: flex;
     background-color: #f5f5f7;
     border-bottom: solid .5rem  #dbdbdb;
@@ -101,73 +100,129 @@ header nav .nav li a:hover{
     border-bottom: solid .2rem #fa941f  ;
 }
 /*main*/
-
 main{
+    padding-top: 12rem;
+    padding-bottom: 10rem;
     max-width: 90rem;
-    margin: 0rem auto;
-    padding-top: 11rem;
+    margin: 0 auto;
 }
-main .top{
+main a .f{
+    display: inline-block;
+    transform: rotate(180deg);
+    padding-left: 2rem;
+    vertical-align: middle;
+    font-size: 4rem;
+    color: #e59345;
+}
+main a{
+    color: #e59345;
+}
+main h2{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+main .truc{
     display: grid;
+    padding-top: 1rem;
     grid-template-columns: repeat(2, 1fr);
 }
-main .top h2{
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 7rem;
+main p{
+    padding-top: 1rem;
 }
-main .top h2 span{
-    font-size: 5rem;
-    line-height: 3rem;
+main .RDV{
+    max-width: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin:  auto auto;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    border: solid .1rem rgba(73, 73, 73, 0.301);
+
 }
-main .top img{
-    justify-self: end;
-    width: 13rem;
-}
-main .choice section{
-    background-color: #fafafa;
-    border: solid 0.1rem rgba(116, 116, 116, 0.171);
-    padding: 5rem;
+
+main .calendar{
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
-    margin: 1rem auto;
-    text-align: center;
+    border: solid .1rem rgba(73, 73, 73, 0.301);
 }
-main .choice section h2{
-    padding: 1rem;
+main .calendar h2{
+    font-size: 3rem;
 }
-main .choice section .lire{
-    text-decoration: underline;
-}
-main .choice section p{
-    padding: 1rem;
-}
-main .choice section a:last-child{
-    display: inline-block;
-    background-color: #e59345;
-    margin: 1rem auto;
-    border: solid 0.1rem rgba(116, 116, 116, 0.171);
-    padding: 2rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
+main .RDV input{
+    padding: 1.5rem;
+    font: 1.6rem 'Balsamiq Sans', sans-serif;
+    width: 100%;
+    display: inline;
+    margin: 2rem auto;
+    border: none;
     border-radius: 1rem;
-    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.205);   
+    border: solid .1rem rgba(73, 73, 73, 0.301);
+    background-color: #e59345;
+    cursor: pointer;
+}
+form{
+    padding-top: 3rem;
+}
+form label{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+form input{
+    line-height: 4rem;
+    font-size: 2rem;
+    width: 100%;
+    padding-left: 2rem;
+    font-family: 'Balsamiq Sans', sans-serif;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    border: none;
+    background-color: #ffff ;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+}
+main .RDV h2{
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+}
+.star{
+    color: red;
+}
+details{
+    cursor: pointer;
+    padding-top: 1.5rem;
+    max-width: 40rem;
+}
+summary{
+    list-style: none;
+    color: #e59345;
 }
 
+summary::after{
+    content: '❮';
+    padding-left: 1.5rem;
+    transform: rotate(-90deg) translateY(1rem) translateX(-.7rem);
+    vertical-align: middle  ;
+    display: inline-block;
+}
+details[open] summary::after{
+    content: '❯';
+    padding-left: 1.5rem;
+}
+details[open] p{
+    text-align: justify;
+    padding-top: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Coord p{
+    color: rgb(73, 73, 73);
+}
+main .calendar{
+    padding: 1rem;
+}
+main img{
+    width: 15rem;
+    display: flex;
+    margin: 0 auto;
+}
 
 
 /*footer*/
@@ -209,6 +264,15 @@ footer img{
     cursor: pointer;
     margin: 0 auto;
 }
+footer hr{
+    max-width: 20rem;
+}
+footer hr:first-child{
+    max-width: 96%;
+}
+footer p{
+    letter-spacing: 0.08em;
+}
 
 @media screen and (max-width: 40.0rem){ 
     header h1{
@@ -244,15 +308,6 @@ footer img{
     header hr{
         display: none;
     }
-    footer hr{
-        max-width: 20rem;
-    }
-    footer hr:first-child{
-        max-width: 96%;
-    }
-    footer p{
-        letter-spacing: 0.08em;
-    }
 
     /*navigation*/
 
@@ -281,18 +336,11 @@ footer img{
     .swish{
         display: none;
     }   
-    /*main*/
     main{
-        max-width: 40rem;
-        padding-top: 19rem;
-        padding: 13rem 2rem 2rem 2rem;
+        padding: 13rem 3rem 3rem 3rem;
     }
-    main .top{
-        display: grid;
+    main .truc{
+        margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
     }
-    main .top img{
-        margin: 0 auto;
-    }
-    
 }

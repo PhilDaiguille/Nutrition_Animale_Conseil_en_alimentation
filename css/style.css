@@ -32,7 +32,7 @@ button{
 
 header{
     margin: 0 auto;
-    height: 10rem;
+    height: 9rem;
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -45,11 +45,10 @@ header{
 }
 header img{
     transform: scale(0.8);
-    transform: scaleY(2rem);
 }
 header hr{
     display: inline-block;
-    background-color: rgba(34, 34, 34, 0.295);
+    color: rgba(34, 34, 34, 0.589);
 }
 header nav{
     display: flex;
@@ -57,12 +56,7 @@ header nav{
     margin: 0 auto;
     justify-content: space-between;
 }
-
-header .nav{
-    max-width: 80rem
-
-}
-header .nav .menu{
+header nav .menu{
     display: none;
 }
 header h1{
@@ -75,9 +69,10 @@ header .C{
     align-items: flex-end;
     padding: 0.6rem;
     font-size: 1.7rem;
+    line-height: 0;
     display: flex;
 }
-header nav ul{
+header nav .nav{
     display: flex;
     width: 100%;
     padding: 1rem;
@@ -85,7 +80,7 @@ header nav ul{
     white-space: nowrap;
 
 }
-header nav ul li{
+header nav .nav li{
     display: flex;
     padding: 1rem;
     text-align: center;
@@ -93,7 +88,7 @@ header nav ul li{
     align-items: center;
     justify-content: space-between;
 }
-header nav ul li a{
+header nav .nav li a{
     display: block;
     text-align: center;
     align-items: center;
@@ -101,21 +96,21 @@ header nav ul li a{
     padding: 1.5rem;
     transition: 0.3s ease-in-out;
 }
-header nav ul li a:hover{
-    transform: translateY(-0.5rem) scale(1.05);
-    transition: 0.2s ease-in-out;
-    color: #1E9ABD;
-    border-bottom: solid .2rem #1E9ABD;
+header nav .nav li a:hover{
+    transform: translateY(-0.6rem) scale(1.07);
+    transition: 0.3s ease-in-out;
+    color: #fa941f;
+    border-bottom: solid .2rem #fa941f  ;
 }
 /*main*/
 main{
     margin: 0 auto;
-    max-width: 135rem;
+    max-width: 95%;
     display: block;
     padding-top: 10.5rem;
 }
 main .first .bvn img{
-    max-width: 20rem;
+    max-width: 15rem;
     display: flex;
     margin: 0 auto;
     
@@ -125,6 +120,7 @@ main .first .bvn{
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 main .first .bvn .bvn1{
     text-align: justify;
@@ -134,6 +130,7 @@ main .first .bvn .bvn1{
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
     border-radius: 1rem;
     padding: 1rem;
+    
 }
 main .first .bvn .bvn1{
     padding-bottom: 3rem;
@@ -151,20 +148,24 @@ main .first .bvn .bvn1 li a{
     color:#0F0F0F;
 }
 main .first .bvn h2{
-    padding-top: 5rem;
     text-align: center;
+    
 }
 main .first .bvn .bvn1 li{
-    padding: 4rem;
+    padding: 3rem;
 }
 main .first .bvn2 li{
     padding: 1rem;
+    
 }
 main .first .bvn2 li img{
     max-width: 47rem;
     border-radius: 1rem;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
     border: solid .2rem rgba(34, 34, 34, 0.342);
+}
+main .first .bvn2{
+    justify-self: start;
 }
 /*Service*/
 main .second .serv{
@@ -177,11 +178,12 @@ main .second{
 }
 main .second .serv .serv1{
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
-    background-color: #ededed;
+    background-color: rgb(246, 255, 124);
     border-radius: 1rem;
 }
 main .second .serv .serv1 li h2{
     text-align: center;
+    color: #222;
     padding-top: 3rem;
     padding-bottom: 1rem;
     font-weight: 400;
@@ -208,7 +210,6 @@ main .second .serv ul li h2{
     padding-bottom: 3rem;
     font-size: 2rem;
     font-weight: 400;
-    color: rgb(73, 73, 73);
 }
 main .second .serv ul li{
     padding: 2rem;
@@ -217,20 +218,21 @@ main .second .serv ul li p{
     text-align: justify;
     
 }
-main .second .serv ul li h2 .f{
-    font-size: 3rem;
-    padding-right: 1rem;
-    color: #247a92;
-    transform: scale(10);
-    letter-spacing: 0.12em;
+main .second .serv ul li h2 .material-icons{
+    color: #cc2f2f;
+    transform: translateY(.4rem);
+    padding-right: 2rem;
+
 }
 
 /*page 3*/
 main .third{
     padding-top: 10rem;
+    z-index: 4;
 }
 main .third ul{
     display: grid;
+    background-color: #ffbf6b;
     margin: 0rem auto;
     max-width: 100%;
     grid-template-columns: 50rem 3fr;
@@ -253,6 +255,72 @@ main .third ul li{
     padding-bottom: 4rem;
 }
 
+main .third .carré{
+    width: 6rem;
+    z-index: 2;
+    position: absolute;
+    left: 40%;
+    opacity: 30%;
+    animation: carré 20s linear infinite;
+}
+@keyframes carré{
+    0%{
+        transform: translateY(0rem) rotate(0deg);
+    }
+    30%{
+        transform: translateY(20rem) rotate(180deg);
+    }
+    70%{
+        transform: translateY(40rem) rotate(360deg);
+    }
+    100%{
+        transform:translateY(63rem) rotate(480deg);;
+    }
+}
+main .third .triangle{
+    width: 10rem;
+    z-index: 2;
+    position: absolute;
+    left: 20%;
+    opacity: 30%;
+    animation: triangle 10s linear infinite;
+}
+@keyframes triangle{
+    0%{
+        transform: translateY(0rem) rotate(0deg);
+    }
+    30%{
+        transform: translateY(20rem) rotate(180deg);
+    }
+    70%{
+        transform: translateY(40rem) rotate(360deg);
+    }
+    100%{
+        transform:translateY(63rem) rotate(480deg);;
+    }
+}
+main .third .hexagone{
+    width: 4rem;
+    z-index: 2;
+    position: absolute;
+    left: 60%;
+    opacity: 30%;
+    animation: hexagone 30s linear infinite;
+}
+@keyframes hexagone{
+    0%{
+        transform: translateY(0rem) rotate(0deg);
+    }
+    30%{
+        transform: translateY(25rem) rotate(180deg);
+    }
+    70%{
+        transform: translateY(49rem) rotate(360deg);
+    }
+    100%{
+        transform:translateY(63rem) rotate(480deg);;
+    }
+}
 
 /*page 4*/
 
@@ -299,8 +367,6 @@ main .formu fieldset{
     border: transparent;
     border-radius: 1rem;
     padding: 2rem;
-    background-color: #ededed;
-    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
 }
 main .formu fieldset legend{
     margin: 0 auto;
@@ -321,23 +387,38 @@ main .formu fieldset form input{
     margin: 0.3rem;
     display:inline-block;
     max-width: 99%;
-    padding: 1rem;
-    border: 0;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    border: none;
+}
+main .formu fieldset form .msg input{
+    display: block;
+    overflow: hidden;
+    height: 17vh;
+    padding-left: 1rem;
+}
+main .formu fieldset form .msg{
+    padding-left: 2rem;
 }
 main .formu fieldset form .NES input, main .formu fieldset form .msg input{
     width: 100%;
 }
-main .formu fieldset form .msg input{
-    border-style: solid;
-    overflow-y: auto;
-}
 main .formu fieldset .input{
-    display: flex;
-    color: #fff;
-    background-color: #f56a56;
+    background-color: #f39d4c;
     border: 0;
-    padding: 1rem;
-
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    margin: 1rem;
+    left: 83%;
+    position: relative;
+    display: flex;
+    font: 1.6rem 'Balsamiq Sans', sans-serif;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    cursor: pointer;
+}
+main .formu fieldset .input:hover{
+    background-color: #ffbf6b;
 }
 
 main .bye{
@@ -346,26 +427,49 @@ main .bye{
 }
 main .bye img{
     margin: 0 auto;
-    max-width: 60rem;
+    max-width: 45rem;
     display: flex;
     padding: 2rem;
 }
 main .bye h2{
     padding-top: 1rem;
     text-align: center;
+    letter-spacing: 2.4rem;
     font-size: 4rem;
 }
 
+/*navigation*/
 
 
 
+/*nuit/jour*/
+
+/*Nuit*/
+
+main .night{
+    position: sticky;
+    max-width: 3.5rem;
+    background-color: #dbdbdb;
+    left: 96%;
+    top: 13%;
+    z-index: 6;
+    border-radius: 0rem 0rem 1rem 1rem;
+    color: #222;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+}
+
+.switch-accessibility{
+    background-color: #222;
+    color: #fff;
+}
 
 
 
 /*footer*/
 
 footer{
-    background-color: #f5f5f7;
     margin-top: 5rem;
 }
 footer p{
@@ -374,7 +478,10 @@ footer p{
     padding: 2rem;
     max-width: 50rem;
     text-align: center;
-    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.8em;
+    letter-spacing: 0.261em;
+    font-weight: 400;
 }
 footer a{
     margin: 0 auto;
@@ -383,13 +490,19 @@ footer a{
     padding-bottom: 3rem;
 }
 footer img:hover{
-    transition: 1s ease-in-out;
-    transform: scale(1.2);
-    border-bottom: solid .3rem #222 ;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+footer hr{
+    width: 29rem;
+    
+}
+footer hr:first-child{
+    width: 49rem;
 }
 footer img{
     padding: 2rem;
-    max-width: 9rem;
+    max-width: 10rem;
     display: block;
     cursor: pointer;
     margin: 0 auto;
@@ -401,12 +514,150 @@ footer img{
         display: block;
     }
     header .C{
+        display: inline-block;
+        padding: 0rem;
+    }
+    header img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 10rem;
+    }
+    header{
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    header nav .nav{
+        display: none;
+    }
+    header nav .menu{
+        display: block;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    header hr{
+        display: none;
+    }
+
+    /*navigation*/
+
+    .navi{
+        position: absolute;
+        background: rgba(109, 109, 109, 0.301);
+        display: inline-block;
+        padding: 4rem;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navi li{
+        padding-top: 6rem;
+        
+    }
+    .navi li:first-child{
+        padding-top: 2rem;
+    }
+    .navi li:last-child{
+        padding-bottom: 11rem;
+    }
+    .navigation{
+        display: block;
+    }
+    .swish{
+        display: none;
+    }   
+    /*main*/
+    main{
+        padding: 16rem .5rem .5rem .5rem;
+        max-width: 100%;
+    }
+    main .second .serv .serv2{
+        padding: 0;
+    }
+    main .first .bvn2 li img{
+        max-width: 90%;
+        display: flex;
+        margin: 0 auto;
+    }
+    main .first .bvn ,main .second, main .third, main .fourth{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main .second .serv, main .second .serv .serv1, main .second .serv .serv2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .third ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .third ul li h1{
+        text-align: center;
+        padding: 0;
+    }
+    main .fourth h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+    main .fourth .info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .formu .test, main .formu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    main .bye img{
+        max-width: 100%;
+    }
+    main .second .serv1{
+        max-width: 100%;
+    }
+    main .first, main .second, main .third, .main.fourth{
+        padding-top: 4rem;
+    }
+    main .second .serv .serv2 .ani img{
+        max-width: 20rem;
+    }
+    main .fourth section img{
+        max-width: 25rem;
+    }
+    main .formu fieldset .input{
+        left: 25%
+    }
+    main .formu fieldset form .msg{
+        padding-left: 0rem;
+    }
+    main .bye h2{
+        letter-spacing: -0.021rem;
+    }
+    footer hr{
+        max-width: 20rem;
+    }
+    footer hr:first-child{
+        max-width: 96%;
+    }
+    footer p{
+        letter-spacing: 0.08em;
+    }
+}
+<<<<<<< Updated upstream
+=======
+@media screen and (orientation: landscape) and (max-width: 60.0rem){
+    header h1{
+        font-size: 2rem;
+        display: block;
+    }
+    header .C{
         display: block;
         font-size: 1.5rem;
     }
     header img{
         display: block;
-        max-width: 30rem;
+        max-width: 60rem;
     }
     header nav ul{
         display: none;
@@ -415,7 +666,8 @@ footer img{
         display: none;
     }
     main{
-        max-width: 40rem;
+        max-width: 60rem;
+        margin: 0 auto;
     }
     main .first .bvn2 li img{
         max-width: 30rem;
@@ -436,6 +688,7 @@ footer img{
         text-align: center;
         margin: 0 auto;
     }
+    
     main .fourth .info{
         display: grid;
         grid-template-columns: repeat(1, 1fr)
@@ -445,18 +698,19 @@ footer img{
         grid-template-columns: repeat(1, 1fr)
     }
     main .bye img{
-        max-width: 35rem;
+        max-width: 55rem;
     }
     main .second{
-        max-width: 40rem;
+        max-width: 60rem;
     }
     main .first, main .second, main .third, .main.fourth{
         padding-top: 4rem;
     }
     main .second .serv .serv2 .ani img{
-        max-width: 20rem;
-    }
-    main .fourth section img{
         max-width: 30rem;
     }
+    main .fourth section img{
+        max-width: 40rem;
+    }
 }
+>>>>>>> Stashed changes

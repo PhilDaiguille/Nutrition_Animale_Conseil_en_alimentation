@@ -7,6 +7,9 @@
     <meta name="description" content="Nutrition animale">
     <title>Nutrition Animale - Chat & Chien</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!--Page navigation-->
@@ -17,12 +20,13 @@
             <h1>Nutrition <br> Animale <br> <span class="C">Conseil en alimentation</span></h1>
         <hr>
 
-        <nav class="nav"> 
-
-            <ul>
-                <li class="menu">
+        <nav> 
+            <ul class="menu">
+                <li>
                     ☰
                 </li>
+            </ul>
+            <ul class="nav">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -48,21 +52,21 @@
         <hr>
     </header>
 
-    <main>
+    <main class="">
         <!--Page Home-->
-
+        <img src="./asset/round_mode_night_black_24dp.png" alt="night" class="night">
         <div class="first">
             <section id="#" class="bvn">   
                 <ul class="bvn1">
-                    <h2>Bienvenue !</h2>
+                    <li><h2>Bienvenue !</h2></li>
                     <li>Votre animal est difficile, en situation de surpoids ou à la recherche d'une alimentation plus saine ? Prenez rendez-vous pour une visite à domicile ou par téléphone.</li>
-                    <li><a href="#">Prendre Rendez-vous</a></li>
-                    <img src="./asset/Pot_de_fleurs.png" alt="Pot">
+                    <li><a href="./RDV.html">Prendre Rendez-vous</a></li>
+                    <li><img src="./asset/vase_plant_flower_pot_icon_181453.png" alt="Pot"></li>
                 </ul>
                 
                 <ul class="bvn2">
-                    <li> <img src="./asset/chien.jpg" alt="Chien"></li>
-                    <li><img src="./asset/chat.jpg" alt="Chat"></li>
+                    <li> <img src="./asset/Chien-min.jpg" alt="Chien"></li>
+                    <li><img src="./asset/chat-min.jpg" alt="Chat"></li>
                 </ul>
             </section>
         </div>
@@ -77,17 +81,16 @@
             </ul>
             <ul class="serv2">
                 <li>
-                    <h2><span class="f">&rsaquo;</span>PERTE DE POIDS</h2>
+                    <h2><i class="material-icons">chevron_right</i>PERTE DE POIDS</h2>
                     <p>Les causes du surpoids sont nombreuses, il est important de déterminer la source du problème avec le propriétaire.
                         Suivi personnel et régulier. Conseil à la perte de poids. Visite à domicile ou rendez-vous téléphonique.</p>
                 </li>
                 <li>
-                    <h2><span class="f">&rsaquo;</span>REGIME B.A.R.F. 
-                        & RATION MÉNAGÈRE</h2>
+                    <h2><i class="material-icons">chevron_right</i>REGIME B.A.R.F. & RATION MÉNAGÈRE</h2>
                     <p>Envie de vous lancer dans le cru mais peur de mal faire ? Nous allons établir ensemble un planning équilibré pour votre animal.</p>
                 </li>
                 <li>
-                    <h2><span class="f">&rsaquo;</span>ALIMENTATION</h2>
+                    <h2><i class="material-icons">chevron_right</i>ALIMENTATION</h2>
                     <p>Recherche d'une alimentation saine et adaptée à l'animal. Apprendre à se retrouver parmi le large choix sur le marché, déchiffrer les étiquettes souvent trompeuses.</p>
                 </li>
                 <li></li>
@@ -98,8 +101,10 @@
     </div>
 
      <!--Page A propos-->
-
      <div class="third" id="Propos">
+        <img src="./asset/carré.png" alt="carré" class="carré">
+        <img src="/asset/triangle_equilateral.png" alt="" class="triangle">
+        <img src="/asset/hexagone.png" alt="" class="hexagone">
         <ul>
             <li><h1>A propos</h1></li>
             <li><p>Au cours de mes études d'auxiliaire vétérinaire, la nutrition m'a particulièrement intéressée.
@@ -183,12 +188,14 @@
     </main> 
     <!--Page Footer-->
 
-    <footer>
+    <footer class="">
+        <hr>
         <p>- Lara GAY de Nutrition Animale - <br> &copy; 2018 - 2021  </p>
+        <hr>
         <a href="https://www.facebook.com/nutritionanimaleparis" target="blank">
             <img class="link" src="./asset/facebookblacksocialbuttoncircle_79771.png" alt="facebook">
         </a>
     </footer>
-    
+    <script src="./js/accès.js"></script>
 </body>
 </html>

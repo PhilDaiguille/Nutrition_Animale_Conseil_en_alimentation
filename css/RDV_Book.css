@@ -26,9 +26,11 @@ button{
     border: 0;
     background-color: transparent;
 }
+/*header*/
+
 header{
     margin: 0 auto;
-    height: 10rem;
+    height: 9rem;
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -41,22 +43,19 @@ header{
 }
 header img{
     transform: scale(0.8);
-    transform: scaleY(2rem);
 }
 header hr{
     display: inline-block;
-    background-color: rgba(34, 34, 34, 0.295);
+    color: rgba(34, 34, 34, 0.589);
 }
 header nav{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     justify-content: space-between;
 }
-
-header .nav{
-    max-width: 80rem
-
+header nav .menu{
+    display: none;
 }
 header h1{
     display: flex;
@@ -70,7 +69,7 @@ header .C{
     font-size: 1.7rem;
     display: flex;
 }
-header nav ul{
+header nav .nav{
     display: flex;
     width: 100%;
     padding: 1rem;
@@ -78,7 +77,7 @@ header nav ul{
     white-space: nowrap;
 
 }
-header nav ul li{
+header nav .nav li{
     display: flex;
     padding: 1rem;
     text-align: center;
@@ -86,7 +85,7 @@ header nav ul li{
     align-items: center;
     justify-content: space-between;
 }
-header nav ul li a{
+header nav .nav li a{
     display: block;
     text-align: center;
     align-items: center;
@@ -94,11 +93,11 @@ header nav ul li a{
     padding: 1.5rem;
     transition: 0.3s ease-in-out;
 }
-header nav ul li a:hover{
-    transform: translateY(-0.5rem);
+header nav .nav li a:hover{
+    transform: translateY(-0.6rem) scale(1.07);
     transition: 0.3s ease-in-out;
-    color: #28add1;
-    border-bottom: solid .2rem #28acd179
+    color: #fa941f;
+    border-bottom: solid .2rem #fa941f  ;
 }
 /*main*/
 main{
@@ -107,7 +106,7 @@ main{
     max-width: 80rem;
 }
 main a{
-    color: #28add1;
+    color: #e59345;
 }
 main .pre h2{
     padding: 3rem;
@@ -115,13 +114,16 @@ main .pre h2{
 }
 main .pre img{
     max-width: 70rem;
-    display: block;
     border-radius: 1rem;
-    padding: 2rem;
     margin: 0 auto;
+    display: block;
+    padding: 1rem;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+    border: solid .1rem rgba(73, 73, 73, 0.301);
 }
 main .pre p{
     font-size: 2rem;
+    margin: 0 auto;
     padding: 3rem;
     text-align: center;
 }
@@ -129,8 +131,10 @@ main section p a{
     color: #ffff;
     text-align: center;
     display: inline-block;
+    border-radius: 1rem;
     padding:2rem;
-    background-color: #28add1;
+    background-color: #e59345;
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
 }
 main a .f{
     display: inline-block;
@@ -138,7 +142,7 @@ main a .f{
     padding-left: 2rem;
     vertical-align: middle;
     font-size: 4rem;
-    color: #28add1;
+    color: #e59345;
 }
 main hr{
     color: rgba(201, 201, 201, 0.527);
@@ -172,7 +176,6 @@ main .info h2{
 /*footer*/
 
 footer{
-    background-color: #f5f5f7;
     margin-top: 5rem;
 }
 footer p{
@@ -181,12 +184,26 @@ footer p{
     padding: 2rem;
     max-width: 50rem;
     text-align: center;
-    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.8em;
+    letter-spacing: 0.261em;
+    font-weight: 400;
 }
 footer a{
     margin: 0 auto;
     max-width: 10rem;
     display: block;
+    padding-bottom: 3rem;
+}
+footer img:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+footer hr{
+    width: 29rem;
+}
+footer hr:first-child{
+    width: 49rem;
 }
 footer img{
     padding: 2rem;
@@ -194,4 +211,91 @@ footer img{
     display: block;
     cursor: pointer;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 40.0rem){ 
+    header h1{
+        font-size: 2rem;
+        display: block;
+    }
+    header .C{
+        display: block;
+        padding: 0rem;
+        font-size: 1.5rem;
+    }
+    header img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 10rem;
+    }
+    header{
+        display: block;
+        height: auto;
+    }
+    header nav .nav{
+        display: none;
+    }
+    header nav .menu{
+        display: block;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    header hr{
+        display: none;
+    }
+    footer hr{
+        max-width: 20rem;
+    }
+    footer hr:first-child{
+        max-width: 96%;
+    }
+    footer p{
+        letter-spacing: 0.08em;
+    }
+
+    /*navigation*/
+
+    .navi{
+        position: absolute;
+        background: rgba(109, 109, 109, 0.301);
+        display: inline-block;
+        padding: 4rem;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navi li{
+        padding-top: 6rem;
+        
+    }
+    .navi li:first-child{
+        padding-top: 2rem;
+    }
+    .navi li:last-child{
+        padding-bottom: 4rem;
+    }
+    .navigation{
+        display: block;
+    }
+    .swish{
+        display: none;
+    }   
+    /*main*/
+    main{
+        padding: 13rem 2rem 2rem 2rem;
+    }
+    main .pre img{
+        max-width: 30rem;
+    }
+    main a .f{
+        padding-right: 2rem;
+    }
+    main hr{
+        max-width: 30rem;
+    }
+
+    
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prendre Rendez vous - Nutrition Animale - Chat & Chien</title>
-    <link rel="stylesheet" href="./css/RDV.css">
+    <title>CGV - Nutrition Animale - Chat & Chien</title>
+    <link rel="stylesheet" href="./css/reservation.css">
 </head>
 <body>
     <header>
@@ -46,29 +46,33 @@
 
         <hr>
     </header>
-    <main class="">
-        <section class="top">
-            <h2><strong>Prendre</strong> <br>
-                <span id="RV">Rendez-vous</span></h2>
-            <img src="./asset/vase_abstract_plant_flower_pot_nature_icon_181462.png" alt="Pot">
-        </section>
-        <div class="choice">
-            <section>
+    <main class=""> 
+        <a href="./RDV.html"><span class="f">&rsaquo;</span>Retour</a>
+        <div class="truc">
+            <section class="Calendar">
+                <h2>Réservation en ligne</h2>
+                <form action="get">
+                    <label for="date"> Date du rendez-vous ( Mercredi, Jeudi et Samedi ) <span class="star">*</span></label>
+                    <input type="date" name="date" id="date" class="" aria-required="true" autofocus><br>
+                    <label for="time"> Heure du rendez-vous ( 09:00 - 18:00 ) <span class="star">*</span></label>
+                    <input type="time" name="time" id="time" aria-required="true" class="">
+                    <h4><span class="star">*</span> Champ obligatoire</h4>
+                </form>
+
+            </section>
+            <section class="RDV">
                 <h2>Premier rendez-vous téléphonique</h2>
-                <a href="./RDV_30€.html" class="lire">En lire plus</a>
-                <p>45 min </p>
-                <p>30 €</p>
-                <a href="./Réservation.html">Prendre rendez-vous</a>
+                <h3>45 Min | 30 €</h3>
+                <input type="submit" value="Suivant">
+                <p class="star"></p>
             </section>
-            <br>
-            <section>
-                <h2>Rendez-vous téléphonique de suivi</h2>
-                <a href="./RDV_20€.html" class="lire">En lire plus</a>
-                <p>30 min</p>
-                <p>20 €</p>
-                <a href="./Réservation2.html">Prendre rendez-vous</a>
-            </section>
+            <details>
+                <summary>Politique de Réservation</summary>
+                <p>Les rendez-vous annulés moins de 48 heures à l'avance ne seront pas remboursés. Les séances peuvent être décalées dans les 4 semaines après la date du rendez-vous initial.</p>
+            </details>
+            <img src="./asset/leaf_plant_vase_flower_pot_icon_181452.png" alt="">
         </div>
+
     </main>
     <footer class="">
         <hr>
