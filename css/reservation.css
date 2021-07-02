@@ -273,7 +273,7 @@ footer img{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 40.0rem){ 
+@media screen and (max-width: 80.0rem){ 
     header h1{
         font-size: 2rem;
         display: block;
@@ -291,7 +291,7 @@ footer img{
     header{
         display: block;
         height: auto;
-        max-width: 37rem;
+        max-width: 100%;
     }
     header nav .nav{
         display: none;

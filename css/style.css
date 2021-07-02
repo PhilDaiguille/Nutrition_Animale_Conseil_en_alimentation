@@ -168,18 +168,20 @@ main .first .bvn2{
     justify-self: start;
 }
 /*Service*/
-main .second .serv{
+main .second .serv1{
     display: grid;
-    max-width: 100%;
-    grid-template-columns: 50rem 3fr;
+    grid-template-columns: repeat(1, 1fr);
 }
-main .second{
+main .second .serv{
     padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 main .second .serv .serv1{
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
     background-color: rgb(246, 255, 124);
     border-radius: 1rem;
+    max-width: 50rem;
 }
 main .second .serv .serv1 li h2{
     text-align: center;
@@ -378,6 +380,7 @@ main .formu .test{
     grid-template-columns: 40rem 2fr;
     max-width: 100rem;
 }
+
 main .formu{
     padding-top: 3rem;
     display: grid;
@@ -471,6 +474,8 @@ main .night{
 
 footer{
     margin-top: 5rem;
+    max-width: 95%;
+    margin: 0 auto;
 }
 footer p{
     margin: 0 auto;
@@ -508,7 +513,7 @@ footer img{
     margin: 0 auto;
 }
 
-@media screen and (max-width: 40.0rem){ 
+@media screen and (max-width: 80.0rem){ 
     header h1{
         font-size: 2rem;
         display: block;
@@ -516,6 +521,7 @@ footer img{
     header .C{
         display: inline-block;
         padding: 0rem;
+        line-height: none;
     }
     header img{
         display: flex;
@@ -598,9 +604,20 @@ footer img{
         text-align: center;
         padding: 0;
     }
+    main .second .serv .serv1{
+        box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
+        background-color: rgb(246, 255, 124);
+        border-radius: 1rem;
+        max-width: 100%;
+    }
     main .fourth h1{
         text-align: center;
         margin: 0 auto;
+    }
+    main .first .bvn .bvn1{
+        padding-bottom: 3rem;
+        max-width: 100%;
+        font-weight: 400;
     }
     main .fourth .info{
         display: grid;
@@ -621,6 +638,7 @@ footer img{
     }
     main .second .serv .serv2 .ani img{
         max-width: 20rem;
+        display: flex;
     }
     main .fourth section img{
         max-width: 25rem;
@@ -644,73 +662,3 @@ footer img{
         letter-spacing: 0.08em;
     }
 }
-<<<<<<< Updated upstream
-=======
-@media screen and (orientation: landscape) and (max-width: 60.0rem){
-    header h1{
-        font-size: 2rem;
-        display: block;
-    }
-    header .C{
-        display: block;
-        font-size: 1.5rem;
-    }
-    header img{
-        display: block;
-        max-width: 60rem;
-    }
-    header nav ul{
-        display: none;
-    }
-    header hr{
-        display: none;
-    }
-    main{
-        max-width: 60rem;
-        margin: 0 auto;
-    }
-    main .first .bvn2 li img{
-        max-width: 30rem;
-    }
-    main .first .bvn ,main .second, main .third, main .fourth{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    main .second .serv, main .second .serv .serv1, main .second .serv .serv2{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .third ul{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .fourth h1{
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    main .fourth .info{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .formu .test, main .formu{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .bye img{
-        max-width: 55rem;
-    }
-    main .second{
-        max-width: 60rem;
-    }
-    main .first, main .second, main .third, .main.fourth{
-        padding-top: 4rem;
-    }
-    main .second .serv .serv2 .ani img{
-        max-width: 30rem;
-    }
-    main .fourth section img{
-        max-width: 40rem;
-    }
-}
->>>>>>> Stashed changes
