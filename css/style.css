@@ -63,6 +63,7 @@ header h1{
     display: flex;
     padding: 1rem;
     max-width: 40rem;
+    color: #222;
     justify-content: end;
 }
 header .C{
@@ -124,8 +125,6 @@ main .first .bvn{
 }
 main .first .bvn .bvn1{
     text-align: justify;
-    background-color: #fafafa;  
-    
     background-color: #ffbf6b;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
     border-radius: 1rem;
@@ -143,6 +142,7 @@ main .first .bvn .bvn1 li a{
     padding: 2rem;
     display: block;
     max-width: 60%;
+    border-radius: 1rem;
     margin: 0 auto;
     text-align: center;
     color:#0F0F0F;
@@ -163,9 +163,7 @@ main .first .bvn2 li img{
     border-radius: 1rem;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
     border: solid .2rem rgba(34, 34, 34, 0.342);
-}
-main .first .bvn2{
-    justify-self: start;
+    transform: translateX(-10rem);
 }
 /*Service*/
 main .second .serv1{
@@ -204,9 +202,10 @@ main .second .serv .serv2 .ani img{
 }
 main .second .serv .serv2{
     display: grid;
-    padding: 5rem;
+    transform: translateX(-15rem);
     padding-top: 3rem;
     grid-template-columns: repeat(2, 1fr);
+    grid-area: auto;
 }
 main .second .serv ul li h2{
     padding-bottom: 3rem;
@@ -234,6 +233,7 @@ main .third{
 }
 main .third ul{
     display: grid;
+    z-index: 1;
     background-color: #ffbf6b;
     margin: 0rem auto;
     max-width: 100%;
@@ -259,11 +259,11 @@ main .third ul li{
 
 main .third .carré{
     width: 6rem;
-    z-index: 2;
+
     position: absolute;
     left: 40%;
-    opacity: 30%;
-    animation: carré 20s linear infinite;
+    opacity: 80%;
+    animation: carré 19s linear infinite;
 }
 @keyframes carré{
     0%{
@@ -276,15 +276,14 @@ main .third .carré{
         transform: translateY(40rem) rotate(360deg);
     }
     100%{
-        transform:translateY(63rem) rotate(480deg);;
+        transform:translateY(62rem) rotate(480deg);;
     }
 }
 main .third .triangle{
     width: 10rem;
-    z-index: 2;
     position: absolute;
-    left: 20%;
-    opacity: 30%;
+    left: 60%;
+    opacity: 100%;
     animation: triangle 10s linear infinite;
 }
 @keyframes triangle{
@@ -298,15 +297,14 @@ main .third .triangle{
         transform: translateY(40rem) rotate(360deg);
     }
     100%{
-        transform:translateY(63rem) rotate(480deg);;
+        transform:translateY(62rem) rotate(480deg);;
     }
 }
 main .third .hexagone{
     width: 4rem;
-    z-index: 2;
     position: absolute;
-    left: 60%;
-    opacity: 30%;
+    left: 80%;
+    opacity: 80%;
     animation: hexagone 30s linear infinite;
 }
 @keyframes hexagone{
@@ -314,13 +312,13 @@ main .third .hexagone{
         transform: translateY(0rem) rotate(0deg);
     }
     30%{
-        transform: translateY(25rem) rotate(180deg);
+        transform: translateY(20rem) rotate(180deg);
     }
     70%{
-        transform: translateY(49rem) rotate(360deg);
+        transform: translateY(40rem) rotate(360deg);
     }
     100%{
-        transform:translateY(63rem) rotate(480deg);;
+        transform:translateY(62rem) rotate(480deg);;
     }
 }
 
@@ -368,7 +366,7 @@ main .fourth .info section ul li img{
 main .formu fieldset{
     border: transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 main .formu fieldset legend{
     margin: 0 auto;
@@ -382,7 +380,7 @@ main .formu .test{
 }
 
 main .formu{
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: 50rem 3fr;
 } 
@@ -393,7 +391,7 @@ main .formu fieldset form input{
     padding: 1.2rem;
     border-radius: 1rem;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
-    border: none;
+    border: solid 0.1rem #222;
 }
 main .formu fieldset form .msg input{
     display: block;
@@ -409,7 +407,7 @@ main .formu fieldset form .NES input, main .formu fieldset form .msg input{
 }
 main .formu fieldset .input{
     background-color: #f39d4c;
-    border: 0;
+    border: solid 0.1rem #222;
     border-radius: 1rem;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
     margin: 1rem;
@@ -425,14 +423,12 @@ main .formu fieldset .input:hover{
 }
 
 main .bye{
-    padding: 2rem;
     margin: 0 auto;
 }
 main .bye img{
     margin: 0 auto;
-    max-width: 45rem;
+    max-width: 35rem;
     display: flex;
-    padding: 2rem;
 }
 main .bye h2{
     padding-top: 1rem;
@@ -440,35 +436,6 @@ main .bye h2{
     letter-spacing: 2.4rem;
     font-size: 4rem;
 }
-
-/*navigation*/
-
-
-
-/*nuit/jour*/
-
-/*Nuit*/
-
-main .night{
-    position: sticky;
-    max-width: 3.5rem;
-    background-color: #dbdbdb;
-    left: 96%;
-    top: 13%;
-    z-index: 6;
-    border-radius: 0rem 0rem 1rem 1rem;
-    color: #222;
-    text-align: right;
-    cursor: pointer;
-    display: none;
-}
-
-.switch-accessibility{
-    background-color: #222;
-    color: #fff;
-}
-
-
 
 /*footer*/
 
@@ -517,21 +484,27 @@ footer img{
     header h1{
         font-size: 2rem;
         display: block;
+        position: sticky;
+        top: 0%;
     }
     header .C{
         display: inline-block;
         padding: 0rem;
+        font-size: 1.5rem;
         line-height: none;
     }
     header img{
-        display: flex;
+        position: absolute;
+        left: 55%;
+        top: 10%;
         margin: 0 auto;
-        max-width: 10rem;
+        max-width: 8rem;
     }
     header{
-        display: block;
+        display: inline-block;
         height: auto;
         max-width: 100%;
+        position: sticky;
     }
     header nav .nav{
         display: none;
@@ -539,8 +512,8 @@ footer img{
     header nav .menu{
         display: block;
         position: absolute;
-        top: 65%;
-        left: 80%;
+        top: 30%;
+        left: 85%;
         font-size: 3rem;
         cursor: pointer;
     }
@@ -558,10 +531,18 @@ footer img{
         text-align: center;
         width: 100%;
         margin: 0 auto;
+        height: auto;
     }
     .navi li{
         padding-top: 6rem;
         
+    }
+    main .second .serv .serv2{
+        display: grid;
+        transform: translateX(0rem);
+        padding-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-area: auto;
     }
     .navi li:first-child{
         padding-top: 2rem;
@@ -577,28 +558,29 @@ footer img{
     }   
     /*main*/
     main{
-        padding: 16rem .5rem .5rem .5rem;
+        padding: 0rem .5rem .5rem .5rem;
         max-width: 100%;
     }
     main .second .serv .serv2{
         padding: 0;
     }
-    main .first .bvn2 li img{
-        max-width: 90%;
-        display: flex;
+    main .first .bvn2 li{
         margin: 0 auto;
     }
-    main .first .bvn ,main .second, main .third, main .fourth{
+    main .first .bvn .bvn1 li a{
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+    main .first .bvn2 li img{
+        display: flex;
+        max-width: 90%;
+        position:sticky;
+        transform: translateX(0rem);
+        margin: 0 auto;
+    }
+    main .first .bvn ,main .second, main .third, main .fourth,main .second .serv, main .second .serv .serv1, main .second .serv .serv2, main .third ul, main .fourth .info,main .formu .test, main .formu{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
-    main .second .serv, main .second .serv .serv1, main .second .serv .serv2{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .third ul{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
     }
     main .third ul li h1{
         text-align: center;
@@ -615,22 +597,12 @@ footer img{
         margin: 0 auto;
     }
     main .first .bvn .bvn1{
-        padding-bottom: 3rem;
-        max-width: 100%;
+        padding: 3rem;
+        max-width: 90%;
+        margin: 0 auto;
         font-weight: 400;
     }
-    main .fourth .info{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .formu .test, main .formu{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
-    }
-    main .bye img{
-        max-width: 100%;
-    }
-    main .second .serv1{
+    main .bye img, main .second .serv1{
         max-width: 100%;
     }
     main .first, main .second, main .third, .main.fourth{

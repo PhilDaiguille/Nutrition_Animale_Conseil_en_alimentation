@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log(200);
-    let el, main, menu, swish, footer, test2,nom,email,expr,num,postal, message, submit, warning, erreur, erreur2, erreur3, erreur4, click, click2, click3,click4;
+    let menu, swish, footer, test2,nom,email,expr,num,postal, message, submit, warning, erreur, erreur2, erreur3, erreur4, click, click2, click3,click4;
     swish = document.querySelector("main");
     footer = document.querySelector("footer");
     main = document.querySelector("body");
-    el = document.querySelector(".night");
+    el = document.querySelector("accès");
     test = document.querySelector("header .nav");
     test2 = document.querySelector("header .navi");
     menu = document.querySelector("header .menu");
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submit = document.getElementById("pay");
     expr = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
     valid = /^[0-9]/;
-
+    
     menu.addEventListener("click", () => {
         test.classList.toggle("nav");
         test.classList.add("navi");
@@ -63,6 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.assign("./site.html#Conctact");
         
     });
+    Storage.clear;
+    submit_session = sessionStorage.getItem("sessionstime");
+    submit_log = localStorage.getItem("date");
+    submit_log2 = localStorage.getItem("time");
+
+    message.innerText=`${submit_log} | ${submit_log2}`;
+
+
+
     class User {
         constructor(nom, email, num, postal) {
             this.nom = document.getElementsByTagName("input")[0].value;
@@ -75,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         verif() {
             if (this.nom && this.email && this.num && this.postal) {
-                message.innerText=``
                 localStorage.setItem("user", this.email); //stocker le login
                 sessionStorage.setItem("user", "sessionid");
                 submit.addEventListener("click", e => {
@@ -83,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
             else{
-                message.innerText = ` Veuillez saisir les champs `;
+                message.innerHTML += ` <br> Veuillez saisir les champs `;
             }
             if (this.nom){
                 erreur2.classList.remove("red");

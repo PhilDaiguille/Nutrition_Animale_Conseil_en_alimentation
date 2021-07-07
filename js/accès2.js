@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log(200);
-    let el, main, menu, swish, footer, test2, date, time, message, submit, warning, erreur, erreur2, erreur3, erreur4, click, click2, click3,click4;
+    let menu, swish, footer, test2, date, time, message, submit, warning, erreur, erreur2, erreur3, erreur4, click, click2, click3,click4;
     swish = document.querySelector("main");
     footer = document.querySelector("footer");
     main = document.querySelector("body");

@@ -214,21 +214,27 @@ footer img{
     header h1{
         font-size: 2rem;
         display: block;
+        position: sticky;
+        top: 0%;
     }
     header .C{
-        display: block;
+        display: inline-block;
         padding: 0rem;
         font-size: 1.5rem;
+        line-height: none;
     }
     header img{
-        display: flex;
+        position: absolute;
+        left: 55%;
+        top: 10%;
         margin: 0 auto;
-        max-width: 10rem;
+        max-width: 8rem;
     }
     header{
-        display: block;
+        display: inline-block;
         height: auto;
         max-width: 100%;
+        position: sticky;
     }
     header nav .nav{
         display: none;
@@ -236,22 +242,13 @@ footer img{
     header nav .menu{
         display: block;
         position: absolute;
-        top: 65%;
-        left: 80%;
+        top: 30%;
+        left: 85%;
         font-size: 3rem;
         cursor: pointer;
     }
     header hr{
         display: none;
-    }
-    footer hr{
-        max-width: 20rem;
-    }
-    footer hr:first-child{
-        max-width: 96%;
-    }
-    footer p{
-        letter-spacing: 0.08em;
     }
 
     /*navigation*/
@@ -264,6 +261,7 @@ footer img{
         text-align: center;
         width: 100%;
         margin: 0 auto;
+        height: auto;
     }
     .navi li{
         padding-top: 6rem;
@@ -273,7 +271,7 @@ footer img{
         padding-top: 2rem;
     }
     .navi li:last-child{
-        padding-bottom: 4rem;
+        padding-bottom: 11rem;
     }
     .navigation{
         display: block;

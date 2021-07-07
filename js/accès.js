@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log(200);
-    let el, main, menu, swish, footer, test2, date, time, message, submit, warning, erreur2, erreur3, click, click2, click3,click4;
+    let menu, swish, footer, test2, date, time, message, submit, warning, erreur2, erreur3, click, click2, click3,click4;
     swish = document.querySelector("main");
     footer = document.querySelector("footer");
     main = document.querySelector("body");
-    el = document.querySelector(".night");
+    el = document.querySelector("body .accès");
     test = document.querySelector("header .nav");
     test2 = document.querySelector("header .navi");
     menu = document.querySelector("header .menu");
@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.assign("./site.html#Conctact");
         
     });
+
     class User {
         constructor(date, time) {
             this.date = document.getElementsByTagName("input")[0].value;
@@ -71,6 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (this.date && this.time) {
                 message.classList.remove("star");
                 message.innerHTML = `Par téléphone <br> ${this.date} | ${this.time}`;
+                localStorage.setItem("date", this.date); //stocker le login
+                localStorage.setItem("time", this.time);
+                sessionStorage.setItem("date", "sessiondate");
+                sessionStorage.setItem("time", "sessiontime");
                 submit.addEventListener("click", e => {
                     window.location.assign("./Coordonnée.html");
                 });
@@ -81,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (this.date){
                 erreur2.classList.remove("red");
-            }
+            }   
             else{
                 erreur2.classList.add("red");
             }

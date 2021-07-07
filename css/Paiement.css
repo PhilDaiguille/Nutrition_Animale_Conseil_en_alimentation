@@ -175,7 +175,7 @@ form input{
     font-family: 'Balsamiq Sans', sans-serif;
     margin: 2rem auto;
     border-radius: 1rem;
-    border: none;
+    border: solid 0.1rem #222;
     background-color: #ffff ;
     box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, 0.473);
 }
@@ -278,21 +278,27 @@ footer p{
     header h1{
         font-size: 2rem;
         display: block;
+        position: sticky;
+        top: 0%;
     }
     header .C{
-        display: block;
+        display: inline-block;
         padding: 0rem;
         font-size: 1.5rem;
+        line-height: none;
     }
     header img{
-        display: flex;
+        position: absolute;
+        left: 55%;
+        top: 10%;
         margin: 0 auto;
-        max-width: 10rem;
+        max-width: 8rem;
     }
     header{
-        display: block;
+        display: inline-block;
         height: auto;
         max-width: 100%;
+        position: sticky;
     }
     header nav .nav{
         display: none;
@@ -300,8 +306,8 @@ footer p{
     header nav .menu{
         display: block;
         position: absolute;
-        top: 65%;
-        left: 80%;
+        top: 30%;
+        left: 85%;
         font-size: 3rem;
         cursor: pointer;
     }
@@ -319,6 +325,7 @@ footer p{
         text-align: center;
         width: 100%;
         margin: 0 auto;
+        height: auto;
     }
     .navi li{
         padding-top: 6rem;
@@ -328,7 +335,7 @@ footer p{
         padding-top: 2rem;
     }
     .navi li:last-child{
-        padding-bottom: 4rem;
+        padding-bottom: 11rem;
     }
     .navigation{
         display: block;
