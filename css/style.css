@@ -278,14 +278,14 @@ main .third .carré{
         transform:translateY(62rem) rotate(480deg);;
     }
 }
-main .third .triangle{
+main .third .carré2{
     width: 6rem;
     position: absolute;
     left: 60%;
     opacity: 40%;
-    animation: triangle 10s linear infinite;
+    animation: carré2 10s linear infinite;
 }
-@keyframes triangle{
+@keyframes carré2{
     0%{
         transform: translateY(0rem) rotate(0deg);
     }
@@ -299,15 +299,15 @@ main .third .triangle{
         transform:translateY(62rem) rotate(480deg);;
     }
 }
-main .third .hexagone{
+main .third .carré3{
     width: 4rem;
     color: #9A7542;
     position: absolute;
     left: 80%;
     opacity: 40%;
-    animation: hexagone 30s linear infinite;
+    animation: carré3 30s linear infinite;
 }
-@keyframes hexagone{
+@keyframes carré3{
     0%{
         transform: translateY(0rem) rotate(0deg);
     }
