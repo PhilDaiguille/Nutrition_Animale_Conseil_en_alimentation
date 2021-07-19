@@ -259,10 +259,9 @@ main .third ul li{
 
 main .third .carré{
     width: 6rem;
-
+    color: #9A7542;
     position: absolute;
     left: 40%;
-    opacity: 80%;
     animation: carré 19s linear infinite;
 }
 @keyframes carré{
@@ -280,10 +279,10 @@ main .third .carré{
     }
 }
 main .third .triangle{
-    width: 10rem;
+    width: 6rem;
     position: absolute;
     left: 60%;
-    opacity: 100%;
+    opacity: 40%;
     animation: triangle 10s linear infinite;
 }
 @keyframes triangle{
@@ -302,9 +301,10 @@ main .third .triangle{
 }
 main .third .hexagone{
     width: 4rem;
+    color: #9A7542;
     position: absolute;
     left: 80%;
-    opacity: 80%;
+    opacity: 40%;
     animation: hexagone 30s linear infinite;
 }
 @keyframes hexagone{

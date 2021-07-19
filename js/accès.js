@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
         footer.classList.toggle("swish");
     });
     click.addEventListener("click", () => {
-        window.location.assign("./site.html");
+        window.location.assign("./site.html#");
+        
     });
     click2.addEventListener("click", () => {
         test.classList.toggle("swish");
@@ -58,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.assign("./site.html#Conctact");
         
     });
-
     class User {
         constructor(date, time) {
             this.date = document.getElementsByTagName("input")[0].value;
